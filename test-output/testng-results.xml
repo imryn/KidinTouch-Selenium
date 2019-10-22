@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="19135" started-at="2019-10-21T08:32:11Z" finished-at="2019-10-21T08:32:30Z">
+    <groups>
+    </groups>
+    <test name="Registration Test" duration-ms="5547" started-at="2019-10-21T08:32:11Z" finished-at="2019-10-21T08:32:16Z">
+      <class name="testcases.RegistrationTest">
+        <test-method status="PASS" signature="registration()[pri:0, instance:testcases.RegistrationTest@402a079c]" name="registration" is-config="true" duration-ms="1456" started-at="2019-10-21T08:32:11Z" finished-at="2019-10-21T08:32:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="fillFormOfKid()[pri:0, instance:testcases.RegistrationTest@402a079c]" name="fillFormOfKid" duration-ms="732" started-at="2019-10-21T08:32:12Z" finished-at="2019-10-21T08:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormOfKid -->
+        <test-method status="PASS" signature="fillFormOfParent()[pri:0, instance:testcases.RegistrationTest@402a079c]" name="fillFormOfParent" duration-ms="1127" started-at="2019-10-21T08:32:13Z" finished-at="2019-10-21T08:32:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillFormOfParent -->
+        <test-method status="PASS" signature="SaveForm()[pri:0, instance:testcases.RegistrationTest@402a079c]" name="SaveForm" duration-ms="2202" started-at="2019-10-21T08:32:14Z" depends-on-methods="testcases.RegistrationTest.fillFormOfKid, testcases.RegistrationTest.fillFormOfParent" finished-at="2019-10-21T08:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SaveForm -->
+      </class> <!-- testcases.RegistrationTest -->
+    </test> <!-- Registration Test -->
+    <test name="Login Test" duration-ms="1880" started-at="2019-10-21T08:32:16Z" finished-at="2019-10-21T08:32:18Z">
+      <class name="testcases.LoginTest">
+        <test-method status="PASS" signature="loginLink()[pri:0, instance:testcases.LoginTest@55d56113]" name="loginLink" is-config="true" duration-ms="655" started-at="2019-10-21T08:32:16Z" finished-at="2019-10-21T08:32:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginLink -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginTest@55d56113]" name="login" duration-ms="1223" started-at="2019-10-21T08:32:17Z" finished-at="2019-10-21T08:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Reports Test" duration-ms="11637" started-at="2019-10-21T08:32:18Z" finished-at="2019-10-21T08:32:30Z">
+      <class name="testcases.ReportsTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.ReportsTest@60c6f5b]" name="setUp" is-config="true" duration-ms="6657" started-at="2019-10-21T08:32:04Z" finished-at="2019-10-21T08:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="makingAlergieReport()[pri:0, instance:testcases.ReportsTest@60c6f5b]" name="makingAlergieReport" duration-ms="5364" started-at="2019-10-21T08:32:18Z" finished-at="2019-10-21T08:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makingAlergieReport -->
+        <test-method status="PASS" signature="makingExceptionReport()[pri:0, instance:testcases.ReportsTest@60c6f5b]" name="makingExceptionReport" duration-ms="3459" started-at="2019-10-21T08:32:23Z" finished-at="2019-10-21T08:32:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makingExceptionReport -->
+        <test-method status="PASS" signature="makingPresenceReport()[pri:0, instance:testcases.ReportsTest@60c6f5b]" name="makingPresenceReport" duration-ms="2811" started-at="2019-10-21T08:32:27Z" finished-at="2019-10-21T08:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makingPresenceReport -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.ReportsTest@60c6f5b]" name="tearDown" is-config="true" duration-ms="630" started-at="2019-10-21T08:32:30Z" finished-at="2019-10-21T08:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.ReportsTest -->
+    </test> <!-- Reports Test -->
+  </suite> <!-- Suite -->
+</testng-results>
