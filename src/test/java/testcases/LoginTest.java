@@ -34,7 +34,7 @@ public class LoginTest extends TestBase {
 		Assert.assertEquals(driver.getCurrentUrl(), "http://sadna.byethost33.com/login_page.php?usertype=parent");
 	}
 	
-	@Test
+	@Test(dependsOnMethods = {"fakeLogin", "fakeParentId", "fakePass", "EmptyInputsForLogin"})
 	public void login() {
 		enterValueToInput("parentId", "201211943");
 		enterValueToInput("password", "12345i");
@@ -44,5 +44,45 @@ public class LoginTest extends TestBase {
 		
 		success_wait.until(ExpectedConditions.urlToBe("http://sadna.byethost33.com/index.php"));
 		
+	}
+	
+	@Test
+	public void fakeLogin() {
+		enterValueToInput("parentId", "54353gffg");
+		enterValueToInput("password", "33242");
+		WriteLoginInputs();		
+	}
+	
+	@Test
+	public void fakeParentId() {
+		enterValueToInput("parentId", "54353gffg");
+		enterValueToInput("password", "12345i");
+		WriteLoginInputs();
+	}
+	
+	@Test
+	public void fakePass() {
+		enterValueToInput("parentId", "201211943");
+		enterValueToInput("password", "33242");
+		WriteLoginInputs();
+	}
+	
+	@Test
+	public void EmptyInputsForLogin() {
+		enterValueToInput("parentId", "");
+		enterValueToInput("password", "");
+		WriteLoginInputs();	
+	}
+	
+	public static void WriteLoginInputs() {
+		driver.findElement(By.className("btn")).click();
+		
+		WebElement parentId = driver.findElement(By.name(OR.getProperty("parentId")));
+		WebElement pass = driver.findElement(By.name(OR.getProperty("password")));
+		
+		
+		Assert.assertEquals(parentId.getAttribute("value").isEmpty(), true);
+		Assert.assertEquals(pass.getAttribute("value").isEmpty(), true);
+		Assert.assertEquals(driver.getCurrentUrl(), "http://sadna.byethost33.com/login_page.php?usertype=parent");	
 	}
 }
